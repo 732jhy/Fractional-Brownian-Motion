@@ -1,5 +1,5 @@
 # Fractional-Brownian-Motion
-Python implementation of fractional brownian motion
+Python implementation of the Davies-Harte method for generating sample paths of Fractional Brownian Motion.
 
 # Plotting sample paths
 ![](images/Hurst_0.2.png) 
