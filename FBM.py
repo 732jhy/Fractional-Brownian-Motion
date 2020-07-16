@@ -7,7 +7,6 @@ Created on Fri Jul  3 15:26:14 2020
 Implementation of Fractional Brownian Motion, Davies Harte Method
 """
 
-import matplotlib.pyplot as plt
 import numpy as np
 
 def fBm(T, N, H):
@@ -46,41 +45,5 @@ def fBm(T, N, H):
     fBm = (T**H)*(fBm)
     path = np.array([0] + list(fBm))
     return path
-
-
-plt.style.use("fivethirtyeight")
-f02 = fBm(1.0, 2000, 0.2);plt.figure(figsize=(12,6));plt.plot(f02, lw=1);plt.title('H = 0.2')
-f05 = fBm(1.0, 2000, 0.5);plt.figure(figsize=(12,6));plt.plot(f05, lw=1);plt.title('H = 0.5')
-f06 = fBm(1.0, 2000, 0.6);plt.figure(figsize=(12,6));plt.plot(f06, lw=1);plt.title('H = 0.6')
-f09 = fBm(1.0, 2000, 0.75);plt.figure(figsize=(12,6));plt.plot(f09, lw=1);plt.title('H = 0.75')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
