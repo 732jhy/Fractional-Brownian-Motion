@@ -9,7 +9,7 @@ Implementation of Fractional Brownian Motion, Davies Harte Method
 
 import numpy as np
 
-def fBm(T, N, H):
+def davies_harte(T, N, H):
     '''
     Generates sample paths of fractional Brownian Motion using the Davies Harte method
     
